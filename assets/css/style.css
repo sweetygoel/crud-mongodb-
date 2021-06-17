@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    background-color:burlywood;
+    }
+.btn{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding:8px;
+    }
+    table{
+        border-spacing:0px;
+        width:100%;
+    }
+    .table td, .table th{
+        padding:0.5em;
+        text-align: center;
+        border-top:1px solid green;
+    }
+    .table tr:hover{
+        background-color: rgb(204, 119, 136);
+    }
+
+
+  /* addcontact page css */
+    h3{
+        text-align: center;
+        background-color:burlywood;
+        }
+        .btn1{
+        text-align: center;
+        background-color: rgb(34, 209, 34);
+        padding:8px;
+        cursor: pointer;
+        width:100%;
+        }
+        .form{
+            width: 100%;
+            margin:2em 0;
+        }
+        input[type="text"]{
+            width:100%;
+            padding:.5em 1em;
+            margin:.8em 0;
+        }
+        input[type="radio"]{
+            margin:.4em 0;
+        }
