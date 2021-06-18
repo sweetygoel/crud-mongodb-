@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h3{
+        text-align: center;
+        background-color:burlywood;
+        }
+        .btn1{
+        text-align: center;
+        background-color: rgb(34, 209, 34);
+        padding:8px;
+        cursor: pointer;
+        width:100%;
+        }
+        .form{
+            width: 100%;
+            margin:2em 0;
+        }
+        input[type="text"]{
+            width:100%;
+            padding:.5em 1em;
+            margin:.8em 0;
+        }
+        input[type="radio"]{
+            margin:.4em 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" style="text-decoration: none;"><i class="fas fa-angle-double-left"></i>ALL CONTACTS</a>
+    <h3>ADD CONTACT</h3>
+    <span class="text-light">We can update contact here..</span>
+    <hr>
+
+    <form action="/updateContact" method=POST id="addContact" class="form">
+        NAME: <input type="text" name="name" placeholder="Enter Name" value={{results.name}}><br>
+        CONTACT: <input type="text" name="contact" placeholder="Enter Contact" value={{results.contact}}><br>
+        STATUS: <input type="radio" name="status" value={{results.status}}>Active
+                <input type="radio" name="status" value={{results.status}}>Inactive<br>
+                <button type="submit" class="btn1">Update</button>
+    </form>
+
+
+</body>
+</html>
